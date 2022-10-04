@@ -1,0 +1,14 @@
+int highest = 0;
+int count = 1, num;
+Random numberGen = new Random();
+while(count <highest)
+{
+  num = numberGen.Next(0, 100);
+  Console.WriteLine(num);
+ if(num > highest)
+ {
+    highest = num;
+ }
+   count = count + 1;
+}
+ Console.WriteLine("The highest is " + highest);
